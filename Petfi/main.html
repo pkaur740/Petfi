@@ -8,6 +8,7 @@
     <meta name="author" content="BCIT">
   
     <!-- Bootstrap for Mobile-first -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -18,51 +19,74 @@
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/script.js"></script>
     <style>
+                @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+
+        body {
+            font-family: 'Raleway';
+     
+        }
       body {
-      background-image: url(http://www.photos-public-domain.com/wp-content/uploads/2011/09/aqua-colored-fur-texture.jpg);
+      background-image: url("images/livingRoom.jpg");
+      background-size: 667px 375px;
       }
  
-        
-
-    .landing-image{
-        height: 35%;
-        width: 100%;
-        border-radius: 2%;
-        
-        
-    }
 
     #pusheen-neutral{
         position: absolute;
-        right: 50px;
-        bottom: 120px;
+        right: 260px;
+        bottom: 70px;
     }
     #shop{
         position: absolute;
-        right: 20px;
+        left: 20px;
         top: 20px; 
     }
     #can{
         position: absolute;
-        right: 150px;
-        top: 20px; 
+        left: 20px;
+        top: 300px; 
     }
     #school{
         position: absolute;
-        right: 20px;
-        top: 170px; 
+        left: 20px;
+        top: 100px; 
     }
     #money{
         position: absolute;
+        left: 20px;
+        top: 200px; 
+    }
+    #health{
+        position:absolute;
         right: 20px;
-        top: 300px; 
+        top: 7px;
+    }
+    #amount{
+        position:absolute;
+        right: 150px;
+        top: 40px;
+    }
+    #budget{
+        position:absolute;
+        right: 150px;
+        top: 40px;
+    }
+    #budget-amt{
+        font-family: 'Raleway';
+        position:absolute;
+        right: 100px;
+        top: 35px;
+        color:brown;
+        font-size: 20pt;
+        font-weight: bold;
+
+
     }
     .button:hover{
   /* Start the shake animation and make the animation last for 0.5 seconds */
   transform: scale(1.5);
   animation: shake 0.5s;
-  
-
   /* When the animation is finished, start again */
   animation-iteration-count: infinite;
 }
@@ -86,21 +110,29 @@
     </style>
 </head>
  
-<body background="">
+<body id="bg">
     <div class="area">
-        <img src="images/pusheen.png" class="button" id="pusheen-neutral" style="width:300px;height:300px;">
-        <img src="images/shop.png" class="button" id="shop" style="width:100px;height:100px;">
-        <img src="images/can.png" class="button" id="can" style="width:100px;height:100px;">
-        <img src="images/school.png" class="button" id="school" style="width:100px;height:100px;">
-        <img src="images/money.png"class="button"  id="money" style="width:100px;height:100px;">
-
-
+        <img src="images/pusheen.png" class="button" id="pusheen-neutral" style="width:150px;height:150px;" >
+        <img src="images/shop.png" class="button" id="shop" style="width:50px;height:50px;" onclick="imageClick('../Petfi/index.html')" >
+        <img src="images/can.png" class="button" id="can" style="width:50px;height:50px;" onclick="imageClick('../Petfi/index.html')">
+        <img src="images/book.png" class="button" id="school" style="width:50px;height:50px;" onclick="imageClick('../Petfi/index.html')">
+        <img src="images/coin.png"class="button"  id="money" style="width:50px;height:50px;" onclick="imageClick('../Petfi/index.html')">
+        <img src="images/health-75.png"class="button"  id="health" style="width:160px;height:30px;" >
+        <img src="images/coin.png"  id="budget" style="width:30px;height:30px;" >
+        <div id="budget-amt">
+            500
+        </div>
     </div>
     
 
 
   
 </body>
+<script>
+function imageClick(url) {
+    window.location = url;
+}
+</script>
 </html>
  
  
