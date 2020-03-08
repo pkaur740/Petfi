@@ -6,7 +6,33 @@
     <title>Petfi</title>
     <meta name="comp1930 boilerplate code" content="my bcit project">
     <meta name="author" content="BCIT">
-  
+    
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-firestore.js"></script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyD3kw_jQmPULY5OT4pWvMUeg90d7UFvors",
+      authDomain: "petfi-e5def.firebaseapp.com",
+      databaseURL: "https://petfi-e5def.firebaseio.com",
+      projectId: "petfi-e5def",
+      storageBucket: "petfi-e5def.appspot.com",
+      messagingSenderId: "608429300370",
+      appId: "1:608429300370:web:1ad704e1d0c9206fec244b"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+  </script>
     <!-- Bootstrap for Mobile-first -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
