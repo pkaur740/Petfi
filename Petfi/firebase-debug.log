@@ -1,0 +1,55 @@
+[debug] [2020-03-08T17:03:03.247Z] ----------------------------------------------------------------------
+[debug] [2020-03-08T17:03:03.252Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jessi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-03-08T17:03:03.252Z] CLI Version:   7.14.0
+[debug] [2020-03-08T17:03:03.252Z] Platform:      win32
+[debug] [2020-03-08T17:03:03.252Z] Node Version:  v13.0.1
+[debug] [2020-03-08T17:03:03.254Z] Time:          Sun Mar 08 2020 10:03:03 GMT-0700 (Pacific Daylight Time)
+[debug] [2020-03-08T17:03:03.254Z] ----------------------------------------------------------------------
+[debug] [2020-03-08T17:03:03.254Z] 
+[debug] [2020-03-08T17:03:03.283Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-08T17:03:03.285Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\jessi
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using tournam-a355c.
+[debug] [2020-03-08T17:03:08.038Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/tournam-a355c  
+ 
+[debug] [2020-03-08T17:03:08.247Z] <<< HTTP RESPONSE 200
+[info] 
+=== Firestore Setup
+[debug] [2020-03-08T17:03:08.278Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-08T17:03:08.282Z] > authorizing via signed-in user
+[debug] [2020-03-08T17:03:08.283Z] [iam] checking project tournam-a355c for permissions ["firebase.projects.get"]
+[debug] [2020-03-08T17:03:08.283Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/tournam-a355c:testIamPermissions  
+
+[debug] [2020-03-08T17:03:08.897Z] <<< HTTP RESPONSE 200
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2020-03-08T17:04:06.969Z] Error: kill ENOSYS
+    at process.kill (internal/process/per_thread.js:189:13)
+    at process.listener (C:\Users\jessi\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\signal-exit\index.js:95:15)
+    at process.emit (events.js:210:5)
+[error] 
+[error] Error: An unexpected error has occurred.
