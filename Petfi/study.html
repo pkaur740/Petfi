@@ -1,4 +1,4 @@
- <!doctype html>
+<!doctype html>
  
 <html lang="en">
 <head>
@@ -32,7 +32,7 @@
       }
  
 
-    #pusheen-neutral{
+    #pusheen{
         position: absolute;
         right: 260px;
         bottom: 70px;
@@ -105,26 +105,31 @@
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
- 
+ #question{
+     position: absolute;
+     right: 220px;
+     top: 50px
+
+ }
 
     </style>
 </head>
  
 <body id="bg">
     <div class="area">
-        <img src="images/pusheen.png" class="button" id="pusheen-neutral" style="width:150px;height:150px;" >
+        <img src="images/pusheen-study.png" class="button" id="pusheen" style="width:30%;height:30%;" >
+        <img src="images/dialogue-box.png"  id="question" style="width:40%;height:40%;" >
         <img src="images/shop.png" class="button" id="shop" style="width:50px;height:50px;" onclick="imageClick('../Petfi/store.html')" >
         <img src="images/can.png" class="button" id="can" style="width:50px;height:50px;" onclick="imageClick('../Petfi/index.html')">
         <img src="images/book.png" class="button" id="school" style="width:50px;height:50px;" onclick="imageClick('../Petfi/school.html')">
-        <img src="images/coin.png"class="button"  id="money" style="width:50px;height:50px;" onclick="imageClick('../Petfi/home.html')">
-        <img src="images/health-75.png"class="button"  id="health" style="width:160px;height:30px;" >
+        <img src="images/coin.png"class="button"  id="money" style="width:50px;height:50px;" onclick="imageClick('../Petfi/index.html')">
+        <img src="images/health-100.png"class="button"  id="health" style="width:160px;height:30px;" >
         <img src="images/coin.png"  id="budget" style="width:30px;height:30px;" >
         <div id="budget-amt">
-            500
+            400
         </div>
     </div>
     
-
 </body>
 <script>
 function imageClick(url) {
